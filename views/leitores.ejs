@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
     <script src="/js/script.js"></script>
-    <title>Leads Facebook</title>
+    <title>Leads Life Nômade</title>
   </head>
   <body>
     <main class="Home">
@@ -15,10 +15,7 @@
           <% listClientes.forEach((clientes) => { %>
           <a href="/detalhes/<%= clientes.id %> ">
             <div class="card">
-              <img src="/img/12.gif" alt="" />
-              <h2><%= clientes.nome %></h2>
               <p><%= clientes.email %></p>
-              <p><%= clientes.whatsapp %></p>
               <a onclick="abrirModal()" href="/delete/<%= clientes.id %>" class="excluir"
                 ><button>APAGAR</button></a
               >

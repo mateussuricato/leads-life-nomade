@@ -22,10 +22,9 @@
 }
 
 body {
-  background-image: url(../img/fundo.jpg);
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(to right, #000000, rgb(0, 2, 80));
+  background-image: linear-gradient(to right, #005781, #4580A9);
   background-attachment: fixed;
 }
 
@@ -66,12 +65,11 @@ h1 {
 }
 
 .cadastro h1 {
-  font-size: 12pt;
   margin-bottom: 20px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  color: #000A36;
+  color: #005781;
 }
 
 .cadastro h2 {
@@ -170,7 +168,6 @@ label {
   height: 50px;
   background-color: #1e62d8;
   color: white;
-  text-transform: uppercase;
   font-weight: 700;
   font-size: 20px;
   cursor: pointer;

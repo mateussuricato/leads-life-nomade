@@ -7,7 +7,7 @@ routers.get("/", getIndex);
 
 routers.get("/obrigado", getObrigado);
 
-routers.get("/leadsfacebook", getLeads);
+routers.get("/leitores", getLeads);
 
 routers.post("/create", postCriar);
 

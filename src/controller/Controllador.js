@@ -21,7 +21,7 @@ export const getLeads = async (req, res) => {
   try {
     const listClientes = await Clientes.findAll();
     const cliente = await Clientes.findByPk(req.params.id);
-    res.render("leadsfacebook", {
+    res.render("leitores", {
       listClientes,
       cliente,
     });
@@ -31,18 +31,14 @@ export const getLeads = async (req, res) => {
 };
 
 export const postCriar = async (req, res) => {
-  const { nome, email, whatsapp, tipodeimovel, valor, datanasc } = req.body;
+  const { nome, email } = req.body;
   try {
-    if (!nome || !email || !whatsapp || !tipodeimovel || !valor || !datanasc) {
+    if (!nome || !email ) {
       res.send("Todos os campos são obrigatórios!");
     } else {
       await Clientes.create({
         nome,
         email,
-        whatsapp,
-        tipodeimovel,
-        valor,
-        datanasc,
       });
       res.redirect("obrigado");
     }

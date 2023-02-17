@@ -7,67 +7,9 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no"
     />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/css/style.css" />
     <title>Oportunidade!</title>
-    <script>
-      function macara_whatsapp() {
-        const whats = document.getElementById("whatsapp");
-        if (whats.value.length == 0) {
-          whats.value += "(";
-        } else if (whats.value.length == 3) {
-          whats.value += ") ";
-        } else if (whats.value.length == 10) {
-          whats.value += "-";
-        }
-      }
-
-      function macara_datanasc() {
-        const data = document.getElementById("datanasc");
-        if (data.value.length == 2 || data.value.length == 5) {
-          data.value += "/";
-        }
-      }
-    </script>
-    <meta
-      name="facebook-domain-verification"
-      content="uhf3enbpwfl061y63x9mo3nxv88p5t"
-    />
-    <!-- Meta Pixel Code -->
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = "2.0";
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
-      );
-      fbq("init", "471173364559618");
-      fbq("track", "PageView");
-    </script>
-    <noscript
-      ><img
-        height="1"
-        width="1"
-        style="display: none"
-        src="https://www.facebook.com/tr?id=471173364559618&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
   </head>
   <body>
     <main>
@@ -84,18 +26,6 @@
             <div>
               <form action="/create" method="post">
                 <div class="inputsForm">
-                  <img src="/img/user.png" alt="" />
-                  <input
-                    autocomplete="off"
-                    type="text"
-                    id="nome"
-                    class="teste"
-                    name="nome"
-                    required
-                    placeholder="Nome Completo"
-                  />
-                </div>
-                <div class="inputsForm">
                   <img src="/img/email.png" alt="" />
                   <input
                     autocomplete="off"
@@ -109,7 +39,7 @@
                 </div>
                 <div class="btnContainer">
                   <button id="btnCadastrar" value="0" type="submit">
-                    Enviar
+                    Receber eBook
                   </button>
                 </div>
               </form>
