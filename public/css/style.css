@@ -7,13 +7,11 @@
 }
 
 .indexsection {
-  padding: 0 10px;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
-  max-width: 1300px !important;
-  margin: 50px auto;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 0.5rem;
 }
 
 .text {
@@ -51,8 +49,11 @@ h1 {
   color: rgb(0, 0, 0);
   border-radius: 7px;
   max-width: 430px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
+  justify-content: center;
+  padding: 1rem 0;
 }
 
 .cadastro2 {
@@ -60,25 +61,44 @@ h1 {
 }
 
 .cadastro img {
-  width: 100%;
+  width: 40%;
+  margin-bottom: 1rem;
 }
 
 .cadastro h1 {
+  font-size: 12pt;
   margin-bottom: 20px;
+  font-weight: 700;
+  text-align: center;
   text-transform: uppercase;
-  font-weight: 900;
+  color: #000A36;
+}
+
+.cadastro h2 {
+  font-size: 12pt;
+  margin-bottom: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.cadastro p {
+  font-size: 10pt;
+  margin-bottom: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: green;
 }
 
 .inputsForm {
   border: 1px solid #00000050;
-  padding: 3px;
+  padding: 0 3px;
   margin-bottom: 20px;
 }
 
 .inputsForm input {
   height: 30px;
   border: none;
-  width: 90%;
+  width: 89%;
   padding-left: 5px;
 }
 
@@ -93,6 +113,7 @@ h1 {
   padding-left: 5px;
   width: 5%;
   vertical-align: middle;
+  padding-top: 0.7rem;
   opacity: 0.5;
 }
 
@@ -247,13 +268,13 @@ input::-webkit-inner-spin-button {
 }
 
 @media screen and (max-width: 613px) {
-.text {
-  padding: 0 3px;
-  color: white;
-  max-height: 150px;
-  text-align: center;
-  font-size: 10px;
-}
+  .text {
+    padding: 0 3px;
+    color: white;
+    max-height: 150px;
+    text-align: center;
+    font-size: 10px;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -271,7 +292,6 @@ input::-webkit-inner-spin-button {
     font-size: 35pt;
   }
 }
-
 
 @media screen and (max-width: 450px) {
   .cadastro2 {
@@ -365,14 +385,13 @@ input::-webkit-inner-spin-button {
 .card:hover {
   position: relative;
   top: -7px;
-  background: #ffffff60
+  background: #ffffff60;
 }
 
 .card img {
   display: block;
   margin: 0px auto;
   width: 100px;
-
 }
 
 .card p {
@@ -387,7 +406,7 @@ input::-webkit-inner-spin-button {
   color: yellow;
 }
 
-.excluir button{
+.excluir button {
   margin-top: 20px;
   width: 110px;
   height: 30px;
@@ -460,7 +479,7 @@ input::-webkit-inner-spin-button {
   align-items: center;
   align-content: center;
   position: absolute;
-	top: 30%;
+  top: 30%;
   background-color: #ffffff40;
   text-align: center;
   width: 400px;
@@ -468,24 +487,24 @@ input::-webkit-inner-spin-button {
   border-radius: 5px;
   cursor: text;
   transition: 0.7s;
-  box-shadow: 0px 0px 15px 2px #FFFFFF40;
+  box-shadow: 0px 0px 15px 2px #ffffff40;
 }
 .container:hover {
   background-color: #ffffff;
-  box-shadow: 0px 0px 15px 2px #FFFFFF;
+  box-shadow: 0px 0px 15px 2px #ffffff;
 }
 
-.container:hover p{
+.container:hover p {
   color: #000000;
   font-weight: 700;
 }
 
-.container:hover span{
+.container:hover span {
   color: #1e01c0;
   font-weight: 700;
 }
 
-.container:hover h1{
+.container:hover h1 {
   color: #000000;
 }
 
@@ -526,7 +545,7 @@ input::-webkit-inner-spin-button {
   }
 } */
 
-.modal-overlay{
+.modal-overlay {
   background-color: #00000050;
   width: 100vw;
   height: 100vh;
@@ -547,22 +566,21 @@ input::-webkit-inner-spin-button {
   height: auto;
   min-height: 150px;
   background-color: #fff;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   top: 200px;
 }
 
-.modal-header{
+.modal-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(to right, #000000, rgb(0, 2, 80))
-  
+  background-image: linear-gradient(to right, #000000, rgb(0, 2, 80));
 }
 
-.modal-header h2{
+.modal-header h2 {
   font-size: 15pt;
   padding: 10px;
   display: block;
@@ -570,7 +588,7 @@ input::-webkit-inner-spin-button {
   text-align: center;
 }
 
-.close-modal{
+.close-modal {
   text-decoration: none;
   color: #000000;
   font-size: 1.5rem;
@@ -579,12 +597,12 @@ input::-webkit-inner-spin-button {
   cursor: pointer;
 }
 
-.close-modal:hover{
+.close-modal:hover {
   transform: scale(1);
 }
 
-.modal-body{
-  padding: .5rem 1rem;
+.modal-body {
+  padding: 0.5rem 1rem;
 }
 
 .modal-body div form {
@@ -594,34 +612,35 @@ input::-webkit-inner-spin-button {
   justify-content: center;
 }
 
-.modal-body div form input, textarea{
+.modal-body div form input,
+textarea {
   width: 100%;
-  padding: .5rem;
-  font-size: .8rem;
+  padding: 0.5rem;
+  font-size: 0.8rem;
   outline: none;
   border: solid 1px #ccc;
-  margin-bottom: .4rem;
-  border-radius: .3rem;
+  margin-bottom: 0.4rem;
+  border-radius: 0.3rem;
 }
 
 .modal-body div button {
-  padding: .5rem;
+  padding: 0.5rem;
   width: 30%;
   font-size: 1rem;
   background-color: transparent;
   color: #0097ce;
   border: solid 1px #0097ce;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
-.modal-body div button:hover{
+.modal-body div button:hover {
   background-color: #0097ce;
   color: #fff;
 }
 
-.button-modal-create{
+.button-modal-create {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -652,71 +671,70 @@ input::-webkit-inner-spin-button {
   border-radius: 5px;
 }
 
-.Acoes{
+.Acoes {
   display: flex;
   justify-content: space-around;
   width: 100%;
   margin-top: 1rem;
 }
 
-.modal-body-delete{
+.modal-body-delete {
   margin-top: 23px;
   display: flex;
   flex-wrap: wrap;
 }
-.modal-body-delete p{
+.modal-body-delete p {
   width: 100%;
   padding: 2rem;
   text-align: center;
   font-size: 1.5rem;
 }
 
-.btn{
+.btn {
   border: none;
-  border-radius: .3rem;
-  padding: .5rem;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
   max-width: 280px;
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
   width: 48%;
-  
+
   transition: all 0.3s ease-in-out;
 }
 
-.btns_delete{
+.btns_delete {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-
 }
 
-.btn_delete{
+.btn_delete {
   background-color: transparent;
-  padding: .5rem;
+  padding: 0.5rem;
   font-size: 1.2rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   width: 30%;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
-.btn_delete_no{
+.btn_delete_no {
   color: #ff0000;
   border: solid 1px #ff0000;
 }
 
-.btn_delete_no:hover{
+.btn_delete_no:hover {
   background-color: #ff0000;
   color: #fff;
 }
 
-.btn_delete_yes{
+.btn_delete_yes {
   color: #00b309;
   border: solid 1px #00b309;
 }
 
-.btn_delete_yes:hover{
+.btn_delete_yes:hover {
   background-color: #00b309;
   color: #fff;
 }

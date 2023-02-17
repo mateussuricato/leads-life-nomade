@@ -18,22 +18,6 @@ export const Clientes = connection.define(
       type: Sequelize.STRING,
       allowNull: false,
     },
-    whatsapp: {
-      type: Sequelize.STRING,
-      allowNull: false,
-    },
-    tipodeimovel: {
-      type: Sequelize.STRING,
-      allowNull: false,
-    },
-    valor: {
-      type: Sequelize.STRING,
-      allowNull: true,
-    },
-    datanasc: {
-      type: Sequelize.STRING,
-      allowNull: false,
-    },
   },
   {
     freezeTableName: true,

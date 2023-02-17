@@ -28,32 +28,59 @@
         }
       }
     </script>
-    <meta name="facebook-domain-verification" content="uhf3enbpwfl061y63x9mo3nxv88p5t" />
-<!-- Meta Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '471173364559618');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=471173364559618&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    <meta
+      name="facebook-domain-verification"
+      content="uhf3enbpwfl061y63x9mo3nxv88p5t"
+    />
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "471173364559618");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=471173364559618&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
   </head>
   <body>
     <main>
       <section class="indexsection">
         <div class="cadastro">
-          <img src="/img/logo.png" alt="" />
+          <h1>O melhor que exite para ser visto e apreciado</h1>
+          <img src="/img/capa.png" alt="" />
           <div class="cadastro2">
-            <h1>As melhores oportunidades de imóveis!</h1>
+            <h2>
+              Você não vai querer morrer sem ao menos saber que esses lugares
+              exitem né?
+            </h2>
+            <p>Informe seus dados para receber o eBook</p>
             <div>
               <form action="/create" method="post">
                 <div class="inputsForm">
@@ -80,94 +107,6 @@
                     placeholder="exemplo@email.com"
                   />
                 </div>
-                <div class="inputsForm">
-                  <img src="/img/whatsapp.png" alt="" />
-                  <input
-                    autocomplete="off"
-                    type="tel"
-                    class="teste"
-                    name="whatsapp"
-                    id="whatsapp"
-                    required
-                    placeholder="(00) 00000-0000"
-                    maxlength="15"
-                    onkeypress="macara_whatsapp()"
-                  />
-                </div>
-                <div class="inputsForm">
-                  <img src="/img/mais.png" alt="" />
-                  <select name="tipodeimovel" id="tipodeimovel" required>
-                    <option value="" id="tipoImovel" disabled selected>
-                      Selecione o tipo de imóvel...
-                    </option>
-                    <option value="casa" class="option">Casa</option>
-                    <option value="apartamento" class="option">
-                      Apartamento
-                    </option>
-                    <option value="casa ou apartamento" class="option">
-                      Casa ou Apartamento
-                    </option>
-                  </select>
-                </div>
-                <p>Escolha o valor do imóvel que você tem interesse:</p>
-                <div class="radio">
-                  <div class="inputRadio">
-                    <input
-                      required
-                      type="radio"
-                      name="valor"
-                      value="R$200.000 a R$400.000"
-                    /><span class="inputLeft">R$200.000 a R$400.000</span>
-                  </div>
-                  <div class="inputRadio">
-                    <input
-                      required
-                      type="radio"
-                      name="valor"
-                      value="R$400.000 a R$600.000"
-                    /><span class="inputLeft">R$400.000 a R$600.000</span>
-                  </div>
-                  <div class="inputRadio">
-                    <input
-                      required
-                      type="radio"
-                      name="valor"
-                      value="R$600.000 a R$800.000"
-                    /><span class="inputLeft">R$600.000 a R$800.000</span>
-                  </div>
-                  <div class="inputRadio">
-                    <input
-                      required
-                      type="radio"
-                      name="valor"
-                      value="R$800.000 a R$1.000.000"
-                    /><span class="inputLeft">R$800.000 a R$1.000.000</span>
-                  </div>
-                  <div class="inputRadio">
-                    <input
-                      required
-                      type="radio"
-                      name="valor"
-                      value="mais de R$1.000.000"
-                    /><span class="inputLeft">R$1.000.000+</span>
-                  </div>
-                </div>
-                <label for="diretor">Data de Nascimento:</label>
-                <div class="inputsForm">
-                  <img src="/img/datas.png" alt="" />
-                  <input
-                    autocomplete="off"
-                    place
-                    type="text"
-                    id="datanasc"
-                    class="teste"
-                    name="datanasc"
-                    required
-                    placeholder="00/00/0000"
-                    maxlength="10"
-                    onkeypress="macara_datanasc(); return event.charCode >= 48 && event.charCode <= 57"
-                  />
-                </div>
                 <div class="btnContainer">
                   <button id="btnCadastrar" value="0" type="submit">
                     Enviar
@@ -176,18 +115,6 @@
               </form>
             </div>
           </div>
-        </div>
-        <div class="text">
-          <p>
-            Pensando em fazer um investimento ou realizar a venda de um imóvel?
-          </p>
-          <p>
-            A Imobiliária Vera Cruz vai te ajudar! O foco dos nossos
-            profissionais está
-          </p>
-          <p>na SUA necessidade, o nosso compromisso é com você!</p>
-          <p>Apartamentos, Casas/Sobrados (dentro e fora de condomínios),</p>
-          <p>lotes, imóveis comerciais, imóveis rurais, fale conosco!</p>
         </div>
       </section>
     </main>
