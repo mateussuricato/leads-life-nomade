@@ -31,13 +31,12 @@ export const getLeads = async (req, res) => {
 };
 
 export const postCriar = async (req, res) => {
-  const { nome, email } = req.body;
+  const { email } = req.body;
   try {
-    if (!nome || !email ) {
+    if (!email) {
       res.send("Todos os campos são obrigatórios!");
     } else {
       await Clientes.create({
-        nome,
         email,
       });
       res.redirect("obrigado");
