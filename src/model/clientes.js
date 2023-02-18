@@ -10,7 +10,7 @@ export const Clientes = connection.define(
       allowNull: false,
       primaryKey: true,
     },
-    nome: {
+    email: {
       type: Sequelize.STRING,
       allowNull: false,
     },
