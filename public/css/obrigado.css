@@ -72,3 +72,14 @@ img {
 .emoji {
   font-size: 22pt!important;
 }
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -0.5rem;
+}
+
+.logoContainer img {
+  width: 50%;
+}
