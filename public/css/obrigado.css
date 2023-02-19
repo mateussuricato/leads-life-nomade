@@ -45,6 +45,7 @@ body {
   color: #005781;
   margin-bottom: 1.3rem;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .modalContent p {
@@ -66,4 +67,8 @@ img {
   color: red;
   font-size: 12px!important;
   margin-top: 1rem;
+}
+
+.emoji {
+  font-size: 22pt!important;
 }
